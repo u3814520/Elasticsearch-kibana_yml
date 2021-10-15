@@ -48,10 +48,22 @@ services:
     restart: on-failure
     volumes:
       - ./kibana.yml:/usr/share/kibana/config/kibana.yml
+      - ./zh-TW.json:/usr/share/kibana/x-pack/plugins/translations/translations/zh-TW.json
+      - ./zh-CN.json:/usr/share/kibana/x-pack/plugins/translations/translations/zh-CN.json
     networks:
       - elastic
     ports:
       - 5601:5601
+    depends_on:
+      - es01
+  head:
+    image: docker.io/mobz/elasticsearch-head:5
+    container_name: head
+    restart: on-failure
+    networks:
+      - elastic
+    ports:
+      - 9100:9100
     depends_on:
       - es01
 volumes:
