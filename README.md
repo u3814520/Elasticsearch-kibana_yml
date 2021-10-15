@@ -22,9 +22,9 @@ sysctl -p
 ```
 
 > PS.剛開始會出現error
-![image](https://github.com/u3814520/Elasticsearch-kibana_yml/blob/main/picturn1.png)
+![image](https://i.imgur.com/9y7N87c.png)
 
 等他跑一下後，
-![image](https://github.com/u3814520/Elasticsearch-kibana_yml/blob/main/picturn2.png)
+![image](https://i.imgur.com/NkyOCbE.png)
 
 就可以成功啟動了~~
