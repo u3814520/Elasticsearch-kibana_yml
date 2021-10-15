@@ -7,7 +7,6 @@
 
 > 然後可以執行以下命令，設置 vm.max_map_count ，但是重啟後又会恢復為預設值。
 
-Inline `code` has `back-ticks around` it.
 ```python
 sysctl -w vm.max_map_count=262144
 ```
