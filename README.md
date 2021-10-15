@@ -13,10 +13,12 @@ sysctl -w vm.max_map_count=262144
 ```
 > 持久性的做法是在 /etc/sysctl.conf 文件中修改 vm.max_map_count 參數
 
-
-Inline `code` has `back-ticks around` it.
 ```python
 echo "vm.max_map_count=262144" > /etc/sysctl.conf
+sysctl -p
+```
+
+```python
 sysctl -p
 ```
 
