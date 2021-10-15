@@ -20,7 +20,7 @@ echo "vm.max_map_count=262144" > /etc/sysctl.conf
 sysctl -p
 ```
 
-> PS.剛開始會出現error
+> PS.如果剛開始會出現error
 ![image](https://i.imgur.com/9y7N87c.png)
 
 等他跑一下後，
