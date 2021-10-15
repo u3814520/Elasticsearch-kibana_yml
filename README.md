@@ -1,0 +1,29 @@
+## Elasticsearch-kibana_yml
+
+錯誤解決：max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+
+
+> 先要切換到root；
+
+> 然後可以執行以下命令，設置 vm.max_map_count ，但是重啟後又会恢復為預設值。
+
+Inline `code` has `back-ticks around` it.
+```python
+sysctl -w vm.max_map_count=262144
+```
+> 持久性的做法是在 /etc/sysctl.conf 文件中修改 vm.max_map_count 參數
+
+
+Inline `code` has `back-ticks around` it.
+```python
+echo "vm.max_map_count=262144" > /etc/sysctl.conf
+sysctl -p
+```
+
+> PS.剛開始會出現error
+![image](https://github.com/u3814520/Elasticsearch-kibana_yml/blob/main/picturn1.png)
+
+等他跑一下後，
+![image](https://github.com/u3814520/Elasticsearch-kibana_yml/blob/main/picturn2.png)
+
+就可以成功啟動了~~
