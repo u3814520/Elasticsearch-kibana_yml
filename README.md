@@ -21,9 +21,7 @@ sysctl -p
 ```
 
 > PS.如果剛開始會出現error
-![image](https://i.imgur.com/9y7N87c.png)
 
 等他跑一下後，
-![image](https://i.imgur.com/NkyOCbE.png)
 
 就可以成功啟動了~~
